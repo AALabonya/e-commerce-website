@@ -9,8 +9,8 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className="bg-gray-800 p-4">
-                <div className="container mx-auto flex justify-between items-center">
+            <nav className="bg-green-600 p-10">
+                <div className="mx-auto flex justify-between items-center">
                     <div className="text-white font-bold text-lg">Your Logo</div>
                     <div className="lg:hidden">
                         <button
