@@ -1,11 +1,14 @@
-import './App.css'
-import Navbar from './Shared/Navbar'
+import Banner from "./Shared/Banner"
+import Navbar from "./UI/Home/Navbar"
+import FirstShop from "./components/FirstShop/FirstShop"
 
 function App() {
 
   return (
     <div>
-      <Navbar />
+     <Navbar/>
+     <Banner/>
+     <FirstShop/>
     </div>
   )
 }

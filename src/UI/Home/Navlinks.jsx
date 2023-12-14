@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import { RiArrowDropDownLine } from "react-icons/ri";
 
 const Navlinks = () => {
@@ -56,7 +56,7 @@ const Navlinks = () => {
         <>
             {
                 menuItem.map(item =>
-                    <div>
+                    <div key={item.id}>
                         <div className='group cursor-pointer'>
                             <li onClick={() => heading !== item.nav ? setHeading(item.nav) : setHeading('') }
                                 className='flex justify-between md:justify-center items-center gap-1 pr-4'>
@@ -72,7 +72,7 @@ const Navlinks = () => {
                                             <div className='px-5 space-y-2 py-2 bg-green-500 z-10 '>
                                                 {
                                                     item?.submenuItem.map(subMenuItem =>
-                                                        <li className='capitalize cursor-pointer hover:text-yellow-500'>{subMenuItem.name}</li>
+                                                        <li key={subMenuItem.id} className='capitalize cursor-pointer hover:text-yellow-500'>{subMenuItem.name}</li>
                                                     )
                                                 }
                                             </div>
@@ -89,7 +89,7 @@ const Navlinks = () => {
                                         <div>
                                             {
                                                 item?.submenuItem.map(subMenuItem => 
-                                                    <li>{ subMenuItem.name }</li>
+                                                    <li key={subMenuItem.id}>{ subMenuItem.name }</li>
                                                 )
                                             }
                                         </div>

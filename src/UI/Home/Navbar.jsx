@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoClose } from "react-icons/io5";
 import Navlinks from './Navlinks';
@@ -9,7 +9,7 @@ const Navbar = () => {
 
     return (
         <div>
-            <nav className='flex justify-between items-center md:px-10'>
+            <nav className='flex justify-between items-center md:px-10 bg-[#678E61] text-white py-5'>
                 <div className='w-full z-50 md:w-auto px-4 py-5 flex justify-between items-center'>
                     <h1 className='text-xl font-bold'>LOGO</h1>
                     <div onClick={() => setOpen(!open)} className='text-2xl md:hidden cursor-pointer'>
